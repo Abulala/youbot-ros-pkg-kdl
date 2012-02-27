@@ -1,5 +1,5 @@
 #!/bin/bash
 for i in $(find . -name  "*" ); do
     echo $i
-    sed -i 's/youbot_description_smits/youbot_description_smits_smits/g' $i
+    sed -i 's/youbot-ros-pkg-kdl/youbot-ros-pkg-kdl_smits/g' $i
 done 
