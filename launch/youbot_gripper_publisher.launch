@@ -2,7 +2,7 @@
 <launch>
 	
 	<!-- static joint state publisher -->
-	<node name="joint_gripper_publisher" pkg="youbot_description" type="joint_gripper_publisher" output="screen"/>
+	<node name="joint_gripper_publisher" pkg="youbot-ros-pkg-kdl" type="joint_gripper_publisher" output="screen"/>
 	
         <!-- TODO:: Add Gazebo model -->
 

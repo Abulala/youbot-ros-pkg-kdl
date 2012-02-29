@@ -2,7 +2,7 @@
 
 dir
 260
-http://youbot-store.com:444/svn/youbot/youbot-ros-pkg/trunk/youbot_common/youbot_description/urdf/sensors
+http://youbot-store.com:444/svn/youbot/youbot-ros-pkg/trunk/youbot_common/youbot-ros-pkg-kdl/urdf/sensors
 http://youbot-store.com:444/svn/youbot
 
 

@@ -2,7 +2,7 @@
 <launch>
 	
 	<!-- send youbot urdf to param server -->
-	<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot_description)/robots/youbot_base.urdf.xacro'"/>
+	<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot-ros-pkg-kdl)/robots/youbot_base.urdf.xacro'"/>
         <remap from="joint_states" to="youbot_base_state"/>
 
 	<!-- start robot_state_publisher -->

@@ -5,7 +5,7 @@
        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
        xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <include filename="$(find youbot_description)/urdf/sensors/hokuyo_urg04_laser.gazebo.xacro" />
+  <include filename="$(find youbot-ros-pkg-kdl)/urdf/sensors/hokuyo_urg04_laser.gazebo.xacro" />
 
   <xacro:macro name="hokuyo_urg04_laser" params="name parent *origin ros_topic update_rate min_angle max_angle">
     <joint name="${name}_hokuyo_urg04_laser_joint" type="fixed">
@@ -23,7 +23,7 @@
       <visual>
       	<origin xyz="0 0 0" rpy="0 0 0" />
 	<geometry>
-		<mesh filename="package://youbot_description/meshes/sensors/hokuyo.dae" />
+		<mesh filename="package://youbot-ros-pkg-kdl/meshes/sensors/hokuyo.dae" />
 	</geometry>
 	<material name="DarkGrey" />
       </visual>
@@ -31,7 +31,7 @@
       <collision>
 		<origin xyz="0 0 0" rpy="0 0 0" />
 		<geometry>
-			<mesh filename="package://youbot_description/meshes/sensors/hokuyo_convex.stl" />
+			<mesh filename="package://youbot-ros-pkg-kdl/meshes/sensors/hokuyo_convex.stl" />
 			
 		</geometry>
 	</collision>

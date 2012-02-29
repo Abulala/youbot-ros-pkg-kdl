@@ -4,7 +4,7 @@
 
 	<group ns="robot1">        
 		<!-- send youbot urdf to param server -->	
-		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot_description)/robots/youbot_arm.urdf.xacro'"/>	
+		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot-ros-pkg-kdl)/robots/youbot_arm.urdf.xacro'"/>	
 		<remap from="joint_states" to="youbot_arm_state"/>
 
 		<!-- start robot_state_publisher -->
@@ -12,7 +12,7 @@
 	</group>
 
 	<group ns="robot2">        
-		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot_description)/robots/youbot_base.urdf.xacro'"/>	
+		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot-ros-pkg-kdl)/robots/youbot_base.urdf.xacro'"/>	
 		<remap from="joint_states" to="youbot_arm_state"/>
 
 		<!-- start robot_state_publisher -->
@@ -20,7 +20,7 @@
 	</group>
 
 	<group ns="robot3">        
-		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot_description)/robots/youbot.urdf.xacro'"/>	
+		<param name="robot_description" command="$(find xacro)/xacro.py '$(find youbot-ros-pkg-kdl)/robots/youbot.urdf.xacro'"/>	
 		<remap from="joint_states" to="youbot_arm_state"/>
 
 		<!-- start robot_state_publisher -->
